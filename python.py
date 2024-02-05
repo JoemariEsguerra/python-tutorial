@@ -1,3 +1,29 @@
+#explain python syntax 
+x = "Python Syntax"
+
+a= " refers to the set of rules and conventions that dictate how Python code should be written and structured."
+b= "Indentation: Uses indentation to define code blocks."
+c= "Comments: Start with # and are ignored by the interpreter."
+d= "Variables: No need to declare types, just assign values."
+e = "Data Types: Include integers, floats, strings, lists, tuples, dictionaries, sets."
+f = "Control Structures: If statements, loops (for, while), try-except blocks."
+g = "Functions: Defined with def keyword."
+h = "Classes: Defined with class keyword."
+i = "Modules and Packages: Used for organizing code into reusable components."
+
+print("What is Python Syntax?")
+print(x + a)
+print("It has some key points which are:")
+print(b)
+print(c)
+print(d)
+print(e)
+print(f)
+print(g)
+print(h)
+print(i)
+
+
 #this is a comment
 print('Hello World!')
 
@@ -46,3 +72,5 @@ def myfunc():
 myfunc()
 
 print("Stephen Curry is " + player1)
+
+#
