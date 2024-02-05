@@ -29,3 +29,10 @@ player1, player2, player3 = "Kobe Bryant", "Michael Jordan","Lebron James"
 print(player1)
 print(player2)
 print(player3)
+
+#Output variables
+player1 = "This is the Legendary Kobe Bryant, a 5 time NBA Champion and NBA Hall of Famer."
+player2 = "Stephen Curry is the greatest shooter of all time."
+player3 = "Mugsy Bouges is the smallest NBA player of all time."
+
+print(player1, player2, player3)
