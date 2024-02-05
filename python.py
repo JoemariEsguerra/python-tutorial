@@ -34,5 +34,15 @@ print(player3)
 player1 = "This is the Legendary Kobe Bryant, a 5 time NBA Champion and NBA Hall of Famer."
 player2 = "Stephen Curry is the greatest shooter of all time."
 player3 = "Mugsy Bouges is the smallest NBA player of all time."
-
 print(player1, player2, player3)
+
+#Global Variables
+player1 = "Greatest Rebounder of Alltime."
+
+def myfunc():
+  global player1
+  player1 = "The Greatest Shooter of Alltime."
+
+myfunc()
+
+print("Stephen Curry is " + player1)
