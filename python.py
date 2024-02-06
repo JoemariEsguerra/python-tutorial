@@ -148,7 +148,7 @@ elif option == '4':
   num1 = input ("Enter 1st number: ")
   num2 = input ("Enter 2nd number: ")
   print("The qoutient is " + str(int(num1) / int(num2)))
-  print("Thank you for using my calculator!")
+  
   print("---------------------------")
 else:
   print("You chose an invalid number.")
