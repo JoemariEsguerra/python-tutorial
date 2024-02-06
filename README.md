@@ -1,3 +1,5 @@
+Python 3.12.1
+
 # What is Python Syntax?
 
 ##### Python Syntax refers to the set of rules and conventions that dictate how Python code should be written and structured. It has some key points which are:
