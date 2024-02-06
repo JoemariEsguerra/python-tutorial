@@ -1,3 +1,5 @@
+
+
 #explain python syntax 
 x = "Python Syntax"
 
@@ -22,10 +24,12 @@ print(f)
 print(g)
 print(h)
 print(i)
+print("---------------------------")
 
 
 #this is a comment
 print('Hello World!')
+print("---------------------------")
 
 
 #python variables
@@ -33,6 +37,7 @@ x = "Kobe Bryant"
 y = 24
 print(x)
 print(y)
+print("---------------------------")
 
 
 #Variable Names
@@ -44,10 +49,11 @@ _my_player = "Lebron James"
 my_player2 = "Lebron James"
 print(myplayer)
 print(MYplayer)
-print(_myPlayer)
+print(_myPlayer)  
 print(my_PLAYER)
 print(_my_player)
 print(my_player2)
+print("---------------------------")
 
 
 #Multiple values
@@ -55,22 +61,31 @@ player1, player2, player3 = "Kobe Bryant", "Michael Jordan","Lebron James"
 print(player1)
 print(player2)
 print(player3)
+print("---------------------------")
+
 
 #Output variables
 player1 = "This is the Legendary Kobe Bryant, a 5 time NBA Champion and NBA Hall of Famer."
 player2 = "Stephen Curry is the greatest shooter of all time."
 player3 = "Mugsy Bouges is the smallest NBA player of all time."
 print(player1, player2, player3)
+print("---------------------------")
+
 
 #Global Variables
 player1 = "Greatest Rebounder of Alltime."
 
-def myfunc():
+def function():
   global player1
   player1 = "The Greatest Shooter of Alltime."
 
-myfunc()
+function()
 
 print("Stephen Curry is " + player1)
+print("---------------------------")
+#display name
+name = input("What is your name?: ")
 
-#
+print("Hello! My name is " + name +".")
+
+
