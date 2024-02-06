@@ -9,3 +9,6 @@
         -Functions: Defined with def keyword.
         -Classes: Defined with class keyword.
         -Modules and Packages: Used for organizing code into reusable components.
+
+# What is why python is case sensitive?
+##### Python is a case-sensitive programming language, meaning it distinguishes between uppercase and lowercase letters in identifiers like variable names, function names, and keywords. For example, "variable" and "Variable" would be considered as two different identifiers in Python.
