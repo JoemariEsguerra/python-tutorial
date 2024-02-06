@@ -1,3 +1,5 @@
+Python 3.12.1
+
 # What is Python Syntax?
 
 ##### Python Syntax refers to the set of rules and conventions that dictate how Python code should be written and structured. It has some key points which are:
@@ -9,3 +11,6 @@
         -Functions: Defined with def keyword.
         -Classes: Defined with class keyword.
         -Modules and Packages: Used for organizing code into reusable components.
+
+# Why python is case sensitive?
+##### Python is a case-sensitive programming language, meaning it distinguishes between uppercase and lowercase letters in identifiers like variable names, function names, and keywords. For example, "variable" and "Variable" would be considered as two different identifiers in Python.
