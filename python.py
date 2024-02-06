@@ -19,7 +19,7 @@ print("It has some key points which are:")
 print(b)
 print(c)
 print(d)
-print(e)
+print(e) 
 print(f)
 print(g)
 print(h)
@@ -97,3 +97,12 @@ def function():
 function()
 print("---------------------------")
 
+#adding 2 numbers
+
+num1 = int(input("1st Number: "))
+num2 = int(input("2nd Number: "))
+sum = int(num1 + num2)
+
+print("The sum is: ") 
+print(sum)
+print("---------------------------")
