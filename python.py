@@ -87,5 +87,13 @@ print("---------------------------")
 name = input("What is your name?: ")
 
 print("Hello! My name is " + name +".")
+print("---------------------------")
 
+#display name with global variables
+name = "Joemari G. Esguerra"
+
+def function():
+  print("My complete name is " + name + ".")
+function()
+print("---------------------------")
 
