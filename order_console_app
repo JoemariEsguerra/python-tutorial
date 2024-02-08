@@ -18,8 +18,8 @@ def inputNumber(message):
 
 age = inputNumber("Age: ")
 if(age<=18):
-
     print(f"Sorry, you're still a minor. You need {str(18-age)} more years to avail our products.")
+    
 else:    
     print("This is our menu: ")
     print("---------------------------")
@@ -41,6 +41,7 @@ else:
     
         menu_number = input("What is your order? ")
         if menu_number == "1":
+            menu = int(570)
             print ("You have ordered 'Pork Sisig w/ 1 bucket of beer'.")
             x = input("Do you want to add more? [Y/N] ").upper()
             if x.upper() == 'Y':
@@ -48,6 +49,7 @@ else:
             else:
                 break    
         elif menu_number == "2": 
+            menu = int(595)
             print("You have ordered 'Chicharong Bulaklak w/ 1 bucket of beer'.")
             x = input("Do you want to add more? [Y/N] ").upper()
             if x.upper() == 'Y':
@@ -113,6 +115,7 @@ else:
         else:
             print("Invalid order.")
             break
+    print(f"Mr. {name} our orders are")
 
    
         
