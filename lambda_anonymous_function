@@ -1,5 +1,4 @@
+#anonymous function using map
 current_list = [23, 24, 1, 5, 53, 66, 88, 84, 91, 2, 9]
-
 new_list = list(map(lambda x: x * 2 , current_list))
-
 print(new_list)
