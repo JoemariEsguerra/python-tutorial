@@ -17,106 +17,203 @@ def inputNumber(message):
        break 
 
 age = inputNumber("Age: ")
-if(age<=18):
+if(age<18):
     print(f"Sorry, you're still a minor. You need {str(18-age)} more years to avail our products.")
     
 else:    
     print("This is our menu: ")
-    print("---------------------------")
-    print('''                   - - - M E N U - - -  
-1. Pork Sisig w/ 1 bucket of beer (SMB, SML, Redhorse ---------------- P 570.00
-2. Chicharong Bulaklak w/ 1 bucket of beer (SMB, SML, Redhorse ------- P 595.00
-3. Inihaw na Liempo w/ 1 bucket of beer (SMB, SML, Redhorse ---------- P 625.00
-4. Camaron Rebusado w/ 1 bucket of beer (SMB, SML, Redhorse ---------- P 650.00
-5. Sizzling Hotdog w/ 1 bucket of beer (SMB, SML, Redhorse ----------- P 499.00
-6. Pinaputok na Tilapia w/ 1 bucket of beer (SMB, SML, Redhorse ------ P 589.00
-7. Marlboro Red 1 Pack ----------------------------------------------- P 265.00
-8. Marlboro Lights 1 Pack -------------------------------------------- P 265.00
-9. Blowjob Cocktail -------------------------------------------------- P 480.00
-10. Tequila Sunrise Cocktail ----------------------------------------- P 485.00
+    print("********************************************************************************")
+    print('''                   
+                            
+                            
+                            - - - M E N U - - -
+            
+[TYPE MENU1- MENU10 TO ORDER]
+MENU #1. Pork Sisig w/ 1 bucket of beer (SMB, SML, Redhorse ---------------- P 570.00
+MENU #2. Chicharong Bulaklak w/ 1 bucket of beer (SMB, SML, Redhorse ------- P 595.00
+MENU #3. Inihaw na Liempo w/ 1 bucket of beer (SMB, SML, Redhorse ---------- P 625.00
+MENU #4. Camaron Rebusado w/ 1 bucket of beer (SMB, SML, Redhorse ---------- P 650.00
+MENU #5. Sizzling Hotdog w/ 1 bucket of beer (SMB, SML, Redhorse ----------- P 499.00
+MENU #6. Pinaputok na Tilapia w/ 1 bucket of beer (SMB, SML, Redhorse ------ P 589.00
+MENU #7. Marlboro Red 1 Pack ----------------------------------------------- P 265.00
+MENU #8. Marlboro Lights 1 Pack -------------------------------------------- P 265.00
+MENU #9. Blowjob Cocktail -------------------------------------------------- P 480.00
+MENU #10. Tequila Sunrise Cocktail ----------------------------------------- P 485.00
 
 ''')    
-    menu_number = ""
-    while True:
+   
     
-        menu_number = input("What is your order? ")
-        if menu_number == "1":
-            menu = int(570)
+    
+    menuNumber = ["Pork Sisig w/ 1 bucket of beer",'Chicharong Bulaklak w/ 1 bucket of beer','Inihaw na Liempo w/ 1 bucket of beer','Camaron Rebusado w/ 1 bucket of beer',"Sizzling Hotdog w/ 1 bucket of beer",'Pinaputok na Tilapia w/ 1 bucket of beer','Marlboro Red 1 Pack','Marlboro Lights 1 Pack','Blowjob Cocktail','Tequila Sunrise Cocktail']
+    prices = [570.00, 595.00, 625.00, 650.00, 499.00, 589.00, 265.00, 265.00, 480.00, 485.00]
+    
+    itemCount = 0
+    totalPriceCount = 0
+    myOrderFood=[]
+    myOrderPrice=[]
+
+    nextOrder = True
+    while nextOrder == True:
+       
+        foodOrder = input("What is your order? ").lower()       
+        if foodOrder == "menu1":            
+            myOrderFood.append(menuNumber[0])
+            myOrderPrice.append(prices[0])
+            totalPriceCount+=1
+            itemCount = itemCount+(prices[0])
+            print("***************************************************")
             print ("You have ordered 'Pork Sisig w/ 1 bucket of beer'.")
+            print("            ")
+            print("            ")
             x = input("Do you want to add more? [Y/N] ").upper()
             if x.upper() == 'Y':
                 continue
             else:
-                break    
-        elif menu_number == "2": 
-            menu = int(595)
+                break
+            
+        elif foodOrder == 'menu2': 
+            myOrderFood.append(menuNumber[1])
+            myOrderPrice.append(prices[1])
+            totalPriceCount+=1
+            itemCount = itemCount+(prices[1])
             print("You have ordered 'Chicharong Bulaklak w/ 1 bucket of beer'.")
+            print("            ")
+            print("            ")
             x = input("Do you want to add more? [Y/N] ").upper()
+            
             if x.upper() == 'Y':
                 continue
             else:
                 break
-        elif menu_number == "3": 
+        elif foodOrder == 'menu3': 
+            myOrderFood.append(menuNumber[2])
+            myOrderPrice.append(prices[2])
+            totalPriceCount+=1
+            itemCount = itemCount+(prices[2])
             print("You have ordered 'Inihaw na Liempo w/ 1 bucket of beer'.")
+            print("            ")
+            print("            ")
             x = input("Do you want to add more? [Y/N] ").upper()
             if x.upper() == 'Y':
                 continue
             else:
                 break
-        elif menu_number == "4": 
+        elif foodOrder == 'menu4':
+            myOrderFood.append(menuNumber[3])
+            myOrderPrice.append(prices[3]) 
+            totalPriceCount+=1
+            itemCount = itemCount+(prices[3])
             print("You have ordered 'Camaron Rebusado w/ 1 bucket of beer'.")
+            print("            ")
+            print("            ")
             x = input("Do you want to add more? [Y/N] ").upper()
             if x.upper() == 'Y':
                 continue
             else:
                 break
-        elif menu_number == "5":
+        elif foodOrder == 'menu5':
+            myOrderFood.append(menuNumber[4])
+            myOrderPrice.append(prices[4])
+            totalPriceCount+=1
+            itemCount = itemCount+(prices[4])
             print("You have ordered 'Sizzling Hotdog w/ 1 bucket of beer'.")
+            print("            ")
+            print("            ")
             x = input("Do you want to add more? [Y/N] ").upper()
             if x.upper() == 'Y':
                 continue
             else:
                 break
-        elif menu_number == "6": 
+        elif foodOrder == 'menu6': 
+            myOrderFood.append(menuNumber[5])
+            myOrderPrice.append(prices[5])
+            totalPriceCount+=1
+            itemCount = itemCount+(prices[5])
             print("You have ordered 'Pinaputok na Tilapia w/ 1 bucket of beer'.")
+            print("            ")
+            print("            ")
             x = input("Do you want to add more? [Y/N] ").upper()
             if x.upper() == 'Y':
                 continue
             else:
                 break
-        elif menu_number == "7": 
+        elif foodOrder == 'menu7': 
+            myOrderFood.append(menuNumber[6])
+            myOrderPrice.append(prices[6])
+            totalPriceCount+=1
+            itemCount = itemCount+(prices[6])
             print("You have ordered 'Marlboro Red 1 Pack'.")
+            print("            ")
+            print("            ")
             x = input("Do you want to add more? [Y/N] ").upper()
             if x.upper() == 'Y':
                 continue
             else:
                 break 
-        elif menu_number == "8": 
+        elif foodOrder == 'menu8':
+            myOrderFood.append(menuNumber[7])
+            myOrderPrice.append(prices[7]) 
+            totalPriceCount+=1
+            itemCount = itemCount+(prices[7])
             print("You have ordered 'Marlboro Lights 1 Pack'.")
+            print("            ")
+            print("            ")
             x = input("Do you want to add more? [Y/N] ").upper()
             if x.upper() == 'Y':
                 continue
             else:
                 break 
-        elif menu_number == "9": 
+        elif foodOrder == 'menu9': 
+            myOrderFood.append(menuNumber[8])
+            myOrderPrice.append(prices[8])
+            totalPriceCount+=1
+            itemCount = itemCount+(prices[8])
             print("You have ordered 'Blowjob Cocktail'.")
+            print("            ")
+            print("            ")
             x = input("Do you want to add more? [Y/N] ").upper()
             if x.upper() == 'Y':
                 continue
             else:
                 break 
-        elif menu_number == "10": 
-            print("You have ordered ''.")
+        elif foodOrder == 'menu10': 
+            myOrderFood.append(menuNumber[9])
+            myOrderPrice.append(prices[9])
+            totalPriceCount+=1
+            itemCount = itemCount+(prices[9])
+            print("You have ordered 'Tequila Sunrise Cocktail'.")
+            print("            ")
+            print("            ")
             x = input("Do you want to add more? [Y/N] ").upper()
             if x.upper() == 'Y':
                 continue
             else:
                 break
         else:
-            print("Invalid order.")
-            break
-    print(f"Mr. {name} our orders are")
-
+            print("Not on the menu.")
+            print("            ")
+            print("            ")
+        finished = input("Do you want to continue ordering? [Y/N] ").upper()
+        if finished == "Y":
+            nextOrder = True
+        else:
+            nextOrder = False   
+    
+    a = 0
+    print("            ")
+    print("            ")
+    print(f"MR/MRS {name}, your orders are:  ")
+    print("            ")
+    print("---------------------------------------------")
+    while a < totalPriceCount:
+        print("Item: " + myOrderFood[a])
+        print("Price: P" + str(myOrderPrice[a]))
+        print("---------------------------------------------")
+        a+=1
+    print("            ")
+    print("            ")
+    print("TOTAL AMOUNT: P " + str(itemCount))
+    print("---------------------------------------------")
    
         
 
