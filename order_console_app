@@ -54,9 +54,9 @@ MENU #10. Tequila Sunrise Cocktail ----------------------------------------- P 4
 
     nextOrder = True
     while nextOrder == True:
-       
+        print("***************************************************")
         foodOrder = input("What is your order? ").lower()       
-        if foodOrder == "menu1":            
+        if foodOrder == "1":            
             myOrderFood.append(menuNumber[0])
             myOrderPrice.append(prices[0])
             totalPriceCount+=1
@@ -71,7 +71,7 @@ MENU #10. Tequila Sunrise Cocktail ----------------------------------------- P 4
             else:
                 break
             
-        elif foodOrder == 'menu2': 
+        elif foodOrder == "2": 
             myOrderFood.append(menuNumber[1])
             myOrderPrice.append(prices[1])
             totalPriceCount+=1
@@ -85,7 +85,7 @@ MENU #10. Tequila Sunrise Cocktail ----------------------------------------- P 4
                 continue
             else:
                 break
-        elif foodOrder == 'menu3': 
+        elif foodOrder == '3': 
             myOrderFood.append(menuNumber[2])
             myOrderPrice.append(prices[2])
             totalPriceCount+=1
@@ -98,7 +98,7 @@ MENU #10. Tequila Sunrise Cocktail ----------------------------------------- P 4
                 continue
             else:
                 break
-        elif foodOrder == 'menu4':
+        elif foodOrder == '4':
             myOrderFood.append(menuNumber[3])
             myOrderPrice.append(prices[3]) 
             totalPriceCount+=1
@@ -111,7 +111,7 @@ MENU #10. Tequila Sunrise Cocktail ----------------------------------------- P 4
                 continue
             else:
                 break
-        elif foodOrder == 'menu5':
+        elif foodOrder == '5':
             myOrderFood.append(menuNumber[4])
             myOrderPrice.append(prices[4])
             totalPriceCount+=1
@@ -124,7 +124,7 @@ MENU #10. Tequila Sunrise Cocktail ----------------------------------------- P 4
                 continue
             else:
                 break
-        elif foodOrder == 'menu6': 
+        elif foodOrder == '6': 
             myOrderFood.append(menuNumber[5])
             myOrderPrice.append(prices[5])
             totalPriceCount+=1
@@ -137,7 +137,7 @@ MENU #10. Tequila Sunrise Cocktail ----------------------------------------- P 4
                 continue
             else:
                 break
-        elif foodOrder == 'menu7': 
+        elif foodOrder == '7': 
             myOrderFood.append(menuNumber[6])
             myOrderPrice.append(prices[6])
             totalPriceCount+=1
@@ -150,7 +150,7 @@ MENU #10. Tequila Sunrise Cocktail ----------------------------------------- P 4
                 continue
             else:
                 break 
-        elif foodOrder == 'menu8':
+        elif foodOrder == '8':
             myOrderFood.append(menuNumber[7])
             myOrderPrice.append(prices[7]) 
             totalPriceCount+=1
@@ -163,7 +163,7 @@ MENU #10. Tequila Sunrise Cocktail ----------------------------------------- P 4
                 continue
             else:
                 break 
-        elif foodOrder == 'menu9': 
+        elif foodOrder == '9': 
             myOrderFood.append(menuNumber[8])
             myOrderPrice.append(prices[8])
             totalPriceCount+=1
@@ -176,7 +176,7 @@ MENU #10. Tequila Sunrise Cocktail ----------------------------------------- P 4
                 continue
             else:
                 break 
-        elif foodOrder == 'menu10': 
+        elif foodOrder == '10': 
             myOrderFood.append(menuNumber[9])
             myOrderPrice.append(prices[9])
             totalPriceCount+=1
@@ -202,6 +202,8 @@ MENU #10. Tequila Sunrise Cocktail ----------------------------------------- P 4
     a = 0
     print("            ")
     print("            ")
+    print("---------------------------------------------")
+    print("Thank you for ordering at --- PATAY SINDI ILAW RESTOBAR AND GRILL ---")
     print(f"MR/MRS {name}, your orders are:  ")
     print("            ")
     print("---------------------------------------------")
